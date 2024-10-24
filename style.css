@@ -4,9 +4,34 @@ body {
 
 header {
     border-bottom: 3px solid #fff;
+    animation: fadeIn 1s ease-in; /* Fade-in effect for 1 second */
+}
+
+.logo {
+    max-width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 10px; /* Space below the logo */
+}
+
+.list-group-item {
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.list-group-item:hover {
+    background-color: #e7f3ff; /* Light blue background on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 footer {
     border-top: 1px solid #ccc;
     padding: 10px 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
